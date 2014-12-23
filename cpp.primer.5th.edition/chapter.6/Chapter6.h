@@ -3,26 +3,26 @@
 // Copyright 2014
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+#pragma once
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//* __7:__ Write a function that returns 0 when its is first called
-//  and then generates numbers in a sequence each time it is called. 
+// * __8:__ Write a header file names Chapter6.h that contains declarations
+// for the functions you wrote for the exercises in 6.1 (p.205).
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-#include <iostream>
+
+#ifndef CHAPTER6_H
+#define CHAPTER6_H
+
+int fact(int a);
+void fact();
+int absolute(int a);
+size_t count_calls();
 
 
 
-size_t count_calls()
-{
-  static size_t ctr = 0;
-  return ctr++;
-}
 
-int main(int argc, char const *argv[])
-{
 
-  for (size_t i = 0; i != 10; ++i)
-    std::cout << count_calls() << std::endl;
-  system("pause");
-  return 0;
-}//end int main(int argc, char const *argv[])
-	
+
+
+#endif CHAPTER6_H
+

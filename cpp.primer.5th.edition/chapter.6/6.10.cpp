@@ -4,25 +4,32 @@
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//* __7:__ Write a function that returns 0 when its is first called
-//  and then generates numbers in a sequence each time it is called. 
+// * __10:__ Using pointers, write a function to swap the values of two ints. 
+// Test the function by calling it and printing the swapped values.
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 #include <iostream>
 
-
-
-size_t count_calls()
+void swapPointers(int *a, int *b)
 {
-  static size_t ctr = 0;
-  return ctr++;
+	int temp;
+	temp = *b;
+	*b = *a;
+	*a = temp;
 }
 
 int main(int argc, char const *argv[])
 {
+	int * a;
+	int * b;
+	int one = 1;
+	int two = 2;
 
-  for (size_t i = 0; i != 10; ++i)
-    std::cout << count_calls() << std::endl;
-  system("pause");
-  return 0;
+	a = &one;
+	b = &two;
+	swapPointers(a, b);
+	std::cout << *a << *b << std::endl;
+
+	system("pause");
+	return 0;
 }//end int main(int argc, char const *argv[])
-	

@@ -1,0 +1,3 @@
+Comparing Integers:
+
+Write a Program that asks the user to enter two integers, obtains the numbers from the user then prints the lasrger of the number followedby the words "is larger". If the numbers are eqaul print the message "These numbers are equal"

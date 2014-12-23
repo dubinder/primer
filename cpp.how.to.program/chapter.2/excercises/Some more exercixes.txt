@@ -1,0 +1,123 @@
+Chapter 2 Introduction to C++ Programming
+
+2.24 (Odd or Even) Write a program that reads an integer and determines and prints whether
+it’s odd or even. [Hint: Use the modulus operator. An even number is a multiple of two. Any multiple
+of two leaves a remainder of zero when divided by 2.]
+
+2.25 (Multiples) Write a program that reads in two integers and determines and prints if the first
+is a multiple of the second. [Hint: Use the modulus operator.]
+
+2.26 (Checkerboard Pattern) Display the following checkerboard pattern with eight output
+statements, then display the same pattern using as few statements as possible.
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+ * * * * * * * *
+* * * * * * * *
+
+2.27 (Integer Equivalent of a Character) Here is a peek ahead. In this chapter you learned about
+integers and the type int. C++ can also represent uppercase letters, lowercase letters and a considerable
+variety of special symbols. C++ uses small integers internally to represent each different character.
+The set of characters a computer uses and the corresponding integer representations for those
+characters are called that computer’s character set. You can print a character by enclosing that character
+in single quotes, as with
+cout << 'A'; // print an uppercase A
+You can print the integer equivalent of a character using static_cast as follows:
+cout << static_cast< int >( 'A' ); // print 'A' as an integer
+This is called a cast operation (we formally introduce casts in Chapter 4). When the preceding
+statement executes, it prints the value 65 (on systems that use the ASCII character set). Write a
+program that prints the integer equivalent of a character typed at the keyboard. Store the input in a
+variable of type char. Test your program several times using uppercase letters, lowercase letters, digits
+and special characters (like $).
+
+2.28 (Digits of an Integer) Write a program that inputs a five-digit integer, separates the integer
+into its digits and prints them separated by three spaces each. [Hint: Use the integer division and
+modulus operators.] For example, if the user types in 42339, the program should print:
+4   2   3   3   9
+
+2.29 (Table) Using the techniques of this chapter, write a program that calculates the squares and
+cubes of the integers from 0 to 10. Use tabs to print the following neatly formatted table of values:
+
+
+integer square cube
+0	0	0
+1 	1	1
+2 	4	8
+3 	9	27
+4 	16 	64
+5 	25 	125
+6 	36 	216
+7 	49	343
+8 	64 	512
+9 	81 	729
+10 	100 	1000
+
+
+2.31 (Car-Pool Savings Calculator) Research several car-pooling websites. Create an application
+that calculates your daily driving cost, so that you can estimate how much money could be saved by
+car pooling, which also has other advantages such as reducing carbon emissions and reducing traffic
+congestion. The application should input the following information and display the user’s cost per
+day of driving to work:
+a) Total miles driven per day.
+b) Cost per gallon of gasoline.
+c) Average miles per gallon.
+d) Parking fees per day.
+e) Tolls per day.
+
+3.6 (Default Constructor) What’s a default constructor? How are an object’s data members initialized
+if a class has only an implicitly defined default constructor?
+
+3.7 (Data Members) Explain the purpose of a data member.
+
+3.8 (Header and Source-Code Files) What’s a header? What’s a source-code file? Discuss the
+purpose of each.
+
+3.9 (Using a Class Without a using Directive) Explain how a program could use class string
+without inserting a using directive.
+
+3.10 (Set and Get Functions) Explain why a class might provide a set function and a get function
+for a data member.
+
+3.11 (Modifying Class GradeBook) Modify class GradeBook (Figs. 3.11–3.12) as follows:
+a) Include a second string data member that represents the course instructor’s name.
+b) Provide a set function to change the instructor’s name and a get function to retrieve it.
+c) Modify the constructor to specify course name and instructor name parameters.
+d) Modify function displayMessage to output the welcome message and course name,
+then the string "This course is presented by: " followed by the instructor’s name.
+Use your modified class in a test program that demonstrates the class’s new capabilities.
+
+3.12 (Account Class) Create an Account class that a bank might use to represent customers’ bank
+accounts. Include a data member of type int to represent the account balance. [Note: In subsequent
+chapters, we’ll use numbers that contain decimal points (e.g., 2.75)—called floating-point values—
+to represent dollar amounts.] Provide a constructor that receives an initial balance and uses it to initialize
+the data member. The constructor should validate the initial balance to ensure that it’s greater
+than or equal to 0. If not, set the balance to 0 and display an error message indicating that the initial
+balance was invalid. Provide three member functions. Member function credit should add an
+amount to the current balance. Member function debit should withdraw money from the Account
+and ensure that the debit amount does not exceed the Account’s balance. If it does, the balance
+should be left unchanged and the function should print a message indicating "Debit amount exceeded
+account balance." Member function getBalance should return the current balance. Create a
+program that creates two Account objects and tests the member functions of class Account.
+
+3.13 (Invoice Class) Create a class called Invoice that a hardware store might use to represent
+an invoice for an item sold at the store. An Invoice should include four data members—a part number
+(type string), a part description (type string), a quantity of the item being purchased (type
+int) and a price per item (type int). [Note: In subsequent chapters, we’ll use numbers that contain
+decimal points (e.g., 2.75)—called floating-point values—to represent dollar amounts.] Your class
+should have a constructor that initializes the four data members. Provide a set and a get function for
+each data member. In addition, provide a member function named getInvoiceAmount that calculates
+the invoice amount (i.e., multiplies the quantity by the price per item), then returns the
+amount as an int value. If the quantity is not positive, it should be set to 0. If the price per item is
+not positive, it should be set to 0. Write a test program that demonstrates class Invoice’s capabilities.
+
+3.14 (Employee Class) Create a class called Employee that includes three pieces of information as
+data members—a first name (type string), a last name (type string) and a monthly salary (type
+int). [Note: In subsequent chapters, we’ll use numbers that contain decimal points (e.g., 2.75)—
+called floating-point values—to represent dollar amounts.] Your class should have a constructor that
+initializes the three data members. Provide a set and a get function for each data member. If the
+monthly salary is not positive, set it to 0. Write a test program that demonstrates class Employee’s
+capabilities. Create two Employee objects and display each object’s yearly salary. Then give each Employee
+a 10 percent raise and display each Employee’s yearly salary again.

@@ -1,8 +1,8 @@
 * __3:__ Write and test your own version of `fact`.
 
-* __4:__ Write a function that interacts with the user, asking for a number and generating the factorial of that number. Call this funciton from `main`.
+* __4:__ Write a function that interacts with the user, asking for a number and generating the factorial of that number. Call this function from `main`.
 
-* __5:__ Write a fucntion to  return the absolute value of its argument;
+* __5:__ Write a function to  return the absolute value of its argument;
 
 * __7:__ Write a function that returns 0 when its is first called and then generates numbers in a sequence each time it is called. 
 
@@ -24,3 +24,12 @@ void reset(int &i)
 
 	(a) A function named compare that returns a bool and has two parameters that are refs, to a class named matrix
 	(b) A function named change_val that returns a vector<int> iterator and takes two params, one is an int, and the other is an iterator for a vector<int>
+
+* __21:__ Write a function that takes an int and a pointer to an int and returns the larger of the int value or the value to which the pointer points. what type should you use for the pointer?
+
+* __22:__ Write a function to swap two int pointers.
+
+* __23:__ Write your own versions of each print functions presented in this section. Call each of these functions to print i, and j defined as follows
+```c++
+	int i = 0, j[2] = {0,1}
+```

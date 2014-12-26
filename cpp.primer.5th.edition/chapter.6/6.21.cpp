@@ -4,22 +4,28 @@
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//* __11:__ Write and test your own version of reset.
+// 21: Write a function that takes an int and a pointer to an int and returns
+// the larger of the int value or the value to which the pointer points. 
+// What type should you use for the pointer?
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 #include <iostream>
 
-void reset(int &i)
+int isBigger(const int i, const int *pi)
 {
-  i = 0;
+	if(i > *pi)
+		return i;
+	else
+		return *pi;
 }
 
 int main(int argc, char const *argv[])
 {
-  int it = 9;
-  std::cout << it;
-  reset(it);
-  std::cout << it;
+	int i = 11;
+	int t = 10;
+	int test;
+	int *pi = &t;
 
-  return 0;
+	test = isBigger(i, pi);
+	std::cout << test << std::endl;
+	return 0;
 }//end int main(int argc, char const *argv[])

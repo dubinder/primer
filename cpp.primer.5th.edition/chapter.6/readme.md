@@ -33,3 +33,7 @@ void reset(int &i)
 ```c++
 	int i = 0, j[2] = {0,1}
 ```
+
+* __25:__ Write a main function  that takes two arguments. Concatenate the supplied arguments and print the resulting string. 
+
+* __26:__ Write a program that accepts the options presented in this section. Print the values of the arguments passed to main. 

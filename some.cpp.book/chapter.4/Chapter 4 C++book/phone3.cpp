@@ -6,9 +6,9 @@
 *Output: areaCode, exhchange and localNumber
 *******************************************/
 
-#include <iostream>            //cin, cout, <<, >>
-#include <string>				//string
-#include <cstdlib>				//exit()
+#include <iostream>           
+#include <string>				
+#include <cstdlib>				
 #include <stdlib.h>				
 using namespace std;
 
@@ -27,16 +27,20 @@ int main()
 	CheckValidity(phoneNumber);
 
 	if (phoneNumber[0] == '1')
-		cout << '(' << phoneNumber.substr(1,3) << ")-"
-			 << phoneNumber.substr(4,3) << '-'
-			 << phoneNumber.substr(7,4) << endl;
+		cout << '(' 
+         << phoneNumber.substr(1,3) 
+         << ")-"
+			   << phoneNumber.substr(4,3) 
+         << '-'
+			   << phoneNumber.substr(7,4) 
+         << endl;
 	else
-		cout << phoneNumber.substr(0,3) << '-'
-			 << phoneNumber.substr(3,4) << endl;
-
-
-
-}
+		cout << phoneNumber.substr(0,3) 
+         << '-'
+			   << phoneNumber.substr(3,4) 
+         << endl;
+  return 0;
+}//end int main(int argc, char const *argv[])
 
 /****************************
 *CheckValidity ensures that a string is a valid phone number
@@ -44,7 +48,6 @@ int main()
 *Recieve: aString, a string
 *Return: nothing if aString is valid Terminate otherwise
 ************************************/
-
 void CheckValidity(string aString)
 {
 	if (aString.size() != 7 && aString.size() != 11)
@@ -58,9 +61,8 @@ void CheckValidity(string aString)
 		if(aString.find_first_not_of("0123456789", 0) != string::npos)
 			PhoneError("A phone number must consist of all digits");
 	}
-
-
 }
+
 /**********************************
 *PhoneError displays an error msg and terminates the program
 *
@@ -68,7 +70,6 @@ void CheckValidity(string aString)
 *Output: message, with phone-specific text
 *Postcondition: Program has been terminated
 *******************************/
-
 void PhoneError(string message)
 {
 

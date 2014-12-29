@@ -243,4 +243,4 @@ inline void RandomInt::initialize(int low, int high)
 	 myRandomValue = nextRandomInt();
 
 }
-#endif
+#endif /* RANDOMINT */

@@ -5,18 +5,16 @@
 *Output: Lyrics for "The Farmer in the Dell"
 ***********************************************************************/
 
-#include <iostream>				//cin, cout, >>, <<
-#include <string>				//string
+#include <iostream>				
+#include <string>				
 using namespace std;
 
 void PrintVerse(string restOfLine);   //function prototype
 
 int main()
 {
-	string name;
 
-	
-	PrintVerse("farmer in the dell");
+  PrintVerse("farmer in the dell");
 	PrintVerse("farmer takes a wife");
 	PrintVerse("wife takes a child");
 	PrintVerse("child takes a nurse");
@@ -26,9 +24,7 @@ int main()
 	PrintVerse("cat takes a rat");
 	PrintVerse("rat takes the cheese");
 	PrintVerse("cheese stands alone");
-	
-	
-	
+
 	return 0;
 }
 
@@ -39,14 +35,12 @@ int main()
 *Receive: restOfLine, a string
 *OutPut: a verse with restOfLine inserted appropriately. 
 ********************************************************/
-
 void PrintVerse(string restOfLine)
 {
 	const string verse =
-						"The " + restOfLine + "\n" +
-						"The " + restOfLine + "\n" +
-						"Hi-ho, the derry-o\n" +
-						"The " + restOfLine + "\n\n";
-
+      "The " + restOfLine + "\n" +
+			"The " + restOfLine + "\n" +
+			"Hi-ho, the derry-o\n" +
+			"The " + restOfLine + "\n\n";
 	cout << verse;
 }

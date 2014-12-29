@@ -41,3 +41,11 @@ void reset(int &i)
 * __33:__ Write a recursive function to print the contents of a vector
 
 * __44:__ Rewrite the isShorter function from p.211 to be inline.
+
+* __51:__ Write all four versions of f. Each function should print a distinguishing message.  Check your answers for the previous exercise.  
+
+* __54:__ Write a declaration for a function that takes two int parameters and returns an int, and declare a vector whose elements have this function type.
+
+* __55:__ Write four functions that add, subtract, and multiply and divide two int values. Store pointers to these functions in your vector from the previous exercise. 
+
+* __56:__ Call each element in the vector and print their result.

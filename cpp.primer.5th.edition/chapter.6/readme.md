@@ -37,3 +37,7 @@ void reset(int &i)
 * __25:__ Write a main function  that takes two arguments. Concatenate the supplied arguments and print the resulting string. 
 
 * __26:__ Write a program that accepts the options presented in this section. Print the values of the arguments passed to main. 
+
+* __33:__ Write a recursive function to print the contents of a vector
+
+* __44:__ Rewrite the isShorter function from p.211 to be inline.

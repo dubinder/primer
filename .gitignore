@@ -27,8 +27,11 @@
 *.sln
 *.suo
 *.vxproj
-*.vxproj.fliters
+*.vxproj.filters
 *.vxproj.user
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
 
 # Debug Files
 *.pdb

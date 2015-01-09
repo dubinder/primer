@@ -1,6 +1,6 @@
 * __1:__ Write a version of the transaction-processin program from (p. 24) using the Sales_data class you defined for the exercises (p.72).
 
-* __4:__ Write a function that interacts with the user, asking for a number and generating the factorial of that number. Call this function from `main`.
+* __2:__ Add the combine and isbn members to the Sales_data class you wrote for the exercises ins 2.6.2 (p. 76)
 
 * __5:__ Write a function to  return the absolute value of its argument;
 

@@ -1,5 +1,5 @@
 #C++ Key Words
-Doesn't Matter| Placehoder 
+Enter|Cool|Title|Here|Whenever 
 :--|:--|:--|:--|:--
 alignas|continue|friend|register|true
 alignof|decltype|goto|reinterpret_cast|try
@@ -19,7 +19,7 @@ const_cast|for|public|throw
 
 
 #C++ Alternate Operator Names
-Doesn't Matter| Placehoder 
+Enter|Cool|Title|Here|Whenever 
 :--|:--|:--|:--|:--
 and|bitand|compl|not_eq|or_eq|xor_eq
 and_eq|bitor|not|or|xor 	

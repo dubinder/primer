@@ -5,7 +5,7 @@
 int fact(int a)
 {
 	int i = a;
-	int sum
+  int sum;
 	while(i > 1)
 		sum *= --i; 
 

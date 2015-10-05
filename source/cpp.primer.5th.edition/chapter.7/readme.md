@@ -2,11 +2,11 @@
 
 * __2:__ Add the combine and isbn members to the Sales_data class you wrote for the exercises ins 2.6.2 (p. 76)
 
-* __5:__ Write a function to  return the absolute value of its argument;
+* __3:__ Revise your transation-processing program to uses these members &7.1.1 (p(256))
 
-* __7:__ Write a function that returns 0 when its is first called and then generates numbers in a sequence each time it is called. 
+* __4:__ Write a class named Person that represents the name and address of a person. Use a string to hold each of these elements. Subsequent exerciese will incrementally add features to this class. 
 
-* __8:__ Write a header file names Chapter6.h that contains declarations for the functions you wrote for the exercises in 6.1 (p.205).
+* __5:__ Provide operations in your Person class to return the name and address. 
 
 * __10:__ Using pointers, write a function to swap the values of two ints. Test the function by calling it and printing the swapped values.
 

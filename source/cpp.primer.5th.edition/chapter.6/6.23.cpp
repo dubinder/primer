@@ -17,17 +17,21 @@ void print(int(&arr)[10])
     std::cout << arr[i] << std::endl;
   }
 }
+
 void print(const char *cp)
 {
   if (cp)
     while (*cp)
       std::cout << *cp++;
+  std::cout << std::endl;
 }
+
 void print(const int *beg, const int *end)
 {
   while (beg != end)
     std::cout << *beg++ << std::endl;
 }
+
 void print(const int ia[], size_t size)
 {
   for (size_t i = 0; i != size; ++i)
@@ -38,10 +42,12 @@ void print(const int ia[], size_t size)
 int main(int argc, char const *argv[])
 {
   int i = 0;
+  const char * test = "fun times";
   int j[2] = { 0, 1 };
-  
- 
-
+  int k[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+  print(test);
+  print(k);
+  print(j, 2);
   print(std::begin(j), std::end(j));
   return 0;
 

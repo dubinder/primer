@@ -12,6 +12,6 @@
 // one is an int, and the other is an iterator for a vector<int>
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #include <vector>
-
+class matrix;
 bool compare(const matrix &r1, const matrix &r2);
 std::vector<int>::iterator change_val(const int i, std::vector<int>::iterator vi);

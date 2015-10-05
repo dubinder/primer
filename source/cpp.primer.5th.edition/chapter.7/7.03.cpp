@@ -4,8 +4,8 @@
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//* __1:__ Write a version of the transaction-processin program from (p. 24),
-// using the Sales_data class you defined for the exercises (p.72).
+//* __3:__ Revise your transation - processing program to uses these members &7.1.1 (p(256))
+//
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #include <iostream>
 #include "Sales_data.h"
@@ -17,19 +17,18 @@ int main(int argc, char const *argv[])
   SalesData data2;
   double price;
   price = 0;
-  
+
   std::cin >> data1.bookNo >> data1.unitsSold >> price;
   data1.revenue = data1.unitsSold * price;
   std::cin >> data2.bookNo >> data2.unitsSold >> price;
   data2.revenue = data2.unitsSold * price;
-  
-  if(data1.bookNo == data2.bookNo)
+
+  if (data1.isbn() == data2.isbn())
   {
-    unsigned totalCnt = data1.unitsSold + data2.unitsSold;
-    double totalRevenue = data1.revenue + data2.revenue;
-    std::cout << data1.bookNo << " " << totalCnt << " " << totalRevenue << " ";
-    if(totalCnt != 0)
-      std::cout << totalRevenue/totalCnt << std::endl;
+    data1.combine(data2);
+    std::cout << data1.bookNo << " " << data1.unitsSold << " " << data1.revenue << " ";
+    if (data1.unitsSold != 0)
+      std::cout << data1.avgPrice() << std::endl;
     else
       std::cout << "(no sales)" << std::endl;
   }
